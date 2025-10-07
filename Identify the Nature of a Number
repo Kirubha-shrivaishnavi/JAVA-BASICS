@@ -1,0 +1,37 @@
+1.Identify the Nature of a Number
+
+Take an integer as input and return "POSITIVE" if the integer is positive, "NEGATIVE" if the integer is negative and "ZERO" if the integer is zero.
+
+Constraints:
+-10000 <= input <= 10000
+
+Input Format:
+A single integer
+
+Output Format:
+A single line containing a string "POSITIVE" if the input is positive, "NEGATIVE" if the input is negative and "ZERO" if the input is zero.
+
+Sample Input:
+12
+
+Sample Output:
+POSITIVE
+
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      if(a<0){
+        System.out.println("NEGATIVE");
+      }else if(a>0){
+      System.out.println("POSITIVE");
+      }else{
+        System.out.println("ZERO");
+      }
+  }
+}
