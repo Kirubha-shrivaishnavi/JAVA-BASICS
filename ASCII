@@ -1,0 +1,25 @@
+Write the program to execute conversion of other datatype.
+
+Input Format:
+A single integer n (0 ≤ n ≤ 127), representing an ASCII code.
+
+Output Format:
+Print the character corresponding to the ASCII value.
+
+Smaple Input :
+97
+
+Smaple Output :
+a
+
+SOLUTON:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      System.out.println((char)a);
+  }
+}
