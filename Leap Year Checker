@@ -1,0 +1,39 @@
+Write a program that reads a year as input and prints whether it is a leap year or not.
+
+Print "yes" if the year is a leap year.
+
+Print "no" if the year is not a leap year.
+
+A leap year occurs every 4 years, but some years are not leap years even if divisible by 4. Some special years are also leap years. Your program should determine this correctly based on the input year.
+
+Input Format:
+
+A single integer representing the year.
+
+Output Format:
+
+Print "yes" if it is a leap year.
+
+Print "no" if it is not a leap year.
+
+Sample Input:
+2000
+
+Sample Output:
+yes
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      if(a%4==0 && a%100!=0 || a%400==0){
+        System.out.println("yes");
+      }else{
+        System.out.println("no");
+      }
+  }
+}
