@@ -1,0 +1,41 @@
+Smallest of Four Numbers
+Max Score: 10 | Difficulty: medium
+Write a program to read four integers and determine the minimum (smallest) number among them.
+
+Input Format :
+
+First line contains an integer (first number).
+Second line contains an integer (second number).
+Third line contains an integer (third number).
+Fourth line contains an integer (fourth number).
+Output Format :
+
+Print the minimum of the four numbers.
+
+Sample Input 0 :
+12
+45
+7
+23
+
+Sample Output 0 :
+7
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      int c = sc.nextInt();
+      int d = sc.nextInt();
+      int e = Math.min(a,b);
+      int f = Math.min(e,c);
+      int g = Math.min(f,d);
+      System.out.println(g);
+      
+  }
+}
