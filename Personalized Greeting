@@ -1,0 +1,26 @@
+Write a program that asks the user to enter their name (a single word).
+Then, print a personalized greeting using that name in a sentence.
+
+Input Format:
+A single word representing the name.
+
+Output Format:
+Print a sentence including the name exactly as shown in the example.
+
+Smaple Input :
+Peter
+
+Smaple Output :
+Hi Peter, welcome to the programming class!
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      String str = sc.next();
+      System.out.println("Hi"+ " "+str+", " +"welcome to the programming class!");
+  }
+}
