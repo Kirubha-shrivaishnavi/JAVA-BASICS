@@ -1,0 +1,34 @@
+You are given an integer counter. Perform the following operations in order:
+
+Add 5
+Multiply by 2
+Subtract 3
+Print the final value.
+
+Input Format:
+Single integer counter.
+
+Output Format:
+Final value after operations.
+
+Smaple Input :
+4
+
+Smaple Output :
+15
+
+((4 + 5) * 2) - 3 = 15
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      
+      System.out.println(((a+5)*2)-3);
+      
+  }
+}
