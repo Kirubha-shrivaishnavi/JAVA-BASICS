@@ -1,0 +1,51 @@
+Write a program to calculate the train fare based on the passenger’s age and distance to travel. The fare rules are:
+
+Children (age < 12): 50% of standard fare per km
+Adults (12 ≤ age ≤ 59): 100% of standard fare per km
+Seniors (age ≥ 60): 75% of standard fare per km
+Standard fare per km: Rs 5
+The program should calculate the total fare based on distance and age category.
+
+Constraints:
+1 <= age <= 120
+1 <= distance <= 1000
+
+Input Format:
+
+First line: An integer denoting age of the passenger
+Second line: An integer denoting distance in km
+Output Format:
+Print the total fare in rupees as an integer or float.
+
+Sample Input:
+10
+100
+
+Sample Output:
+250
+
+Explanation:
+Age < 12 → 50% of fare
+Standard fare = 100 × 5 = 500
+Discounted fare = 500 × 0.5 = 250
+
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+     float fare = b*5;
+     if (a <12){
+       System.out.println((int)(fare*0.5));
+     }else if(a>=60){
+       System.out.println((int)(fare*0.75));
+     }else{
+       System.out.println((int)fare);
+     }
+  }
+}
