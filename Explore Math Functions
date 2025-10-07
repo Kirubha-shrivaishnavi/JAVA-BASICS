@@ -1,0 +1,52 @@
+ Explore Math Functions
+Max Score: 10 | Difficulty: easy
+Kumar wants to know how the math functions are working in programming. Could you please help him write a program to understand the behavior of some mathematical functions like floor, ceil, round, sqrt, and power.
+
+Constraints:
+-1000 <= input <= 1000
+
+Input Format :
+
+First input corresponds to a float value (used for floor, ceil, and round).
+Second input corresponds to an integer (used for square root).
+Third input corresponds to an integer (used as base value).
+Fourth input corresponds to an integer (used as power value).
+Output Format :
+
+Execute and display the results in the following order:
+Floor value of the float
+Ceil value of the float
+Rounded value of the float
+Square root of the given integer
+Base raised to the power of exponent
+Sample Input:
+67.6734
+16
+5
+2
+
+Sample Output:
+67
+68
+68
+4
+25
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      float a = sc.nextFloat();
+      int sq = sc.nextInt();
+      int ba = sc.nextInt();
+      int po = sc.nextInt();
+      System.out.println((int)Math.floor(a));
+      System.out.println((int)Math.ceil(a));
+      System.out.println(Math.round(a));
+      System.out.println((int)Math.sqrt(sq));
+      System.out.println((int)Math.pow(ba,po));
+  }
+}
