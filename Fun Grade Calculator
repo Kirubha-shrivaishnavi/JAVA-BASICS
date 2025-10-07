@@ -1,0 +1,53 @@
+Write a program that reads marks in five subjects and calculates the average. Based on the average, return a fun and encouraging grade according to the following rules:
+
+Average ≥ 90 → "Excellent!"
+Average ≥ 80 and < 90 → "Great Job!"
+Average ≥ 70 and < 80 → "Good Effort!"
+Average ≥ 50 and < 70 → "Keep Trying!"
+Average < 50 → "Better Luck Next Time!"
+Constraints:
+0 <= marks in each subject <= 100
+
+Input Format:
+Five integers, each on a separate line, representing marks in five subjects.
+
+Output Format:
+A single line containing the fun grade.
+
+Sample Input:
+100
+90
+80
+70
+60
+
+Sample Output:
+Great Job!
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      int c = sc.nextInt();
+      int d = sc.nextInt();
+      int e = sc.nextInt();
+      int tot = a+b+c+d+e;
+      int avg = tot/5;
+      if(avg>=90){
+        System.out.println("Excellent!");
+      }else if(avg>=80 && avg<90){
+        System.out.println("Great Job!");
+      }else if(avg>=70 && avg<80){
+        System.out.println("Good Effort!");
+      }else if(avg>=50 && avg<70){
+        System.out.println("Keep Trying!");
+      }else{
+        System.out.println("Better Luck Next Time!");
+      }
+  }
+}
