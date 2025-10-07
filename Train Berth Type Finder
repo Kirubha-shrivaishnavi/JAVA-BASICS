@@ -1,0 +1,69 @@
+Write a program to determine the berth type based on the seat number.
+
+In a train coach, each seat number corresponds to a specific berth type. For a given seat number, your task is to determine which berth type it is. The seat allocation in most Indian Sleeper (SL) and 3AC coaches follows a repeated pattern of 8 seats:
+
+1 → LB (Lower Berth)
+2 → MB (Middle Berth)
+3 → UB (Upper Berth)
+4 → LB (Lower Berth)
+5 → MB (Middle Berth)
+6 → UB (Upper Berth)
+7 → SL (Side Lower)
+0 → SU (Side Upper)
+Constraints:
+1 ≤ Seat Number ≤ 72 — Valid seat numbers in a coach
+
+Input Format:
+First line contains a single integer T lines each contain one integer — the seat number.
+
+Output Format:
+For each test case, print the corresponding berth type in uppercase:
+LB, MB, UB, SL, SU
+
+Sample Input:
+1
+
+Sample Output:
+LB
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      if(a>=0 && a<=72){
+        a = a%8;
+      }
+        switch(a){
+          case 1:
+            System.out.println("LB");
+            break;
+          case 2:
+            System.out.println("MB");
+            break;
+          case 3:
+            System.out.println("UB");
+            break;
+          case 4:
+            System.out.println("LB");
+            break;
+          case 5:
+            System.out.println("MB");
+            break;
+          case 6:
+            System.out.println("UB");
+            break;
+          case 7:
+            System.out.println("SL");
+            break;
+          case 0:
+            System.out.println("SU");
+            break;
+          
+        }
+      
+  }
+}
