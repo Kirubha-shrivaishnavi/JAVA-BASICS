@@ -1,0 +1,51 @@
+Write a program that reads one value of each type from the user in the following order:
+
+Input Format:
+
+First line: integer
+
+Second line: float
+
+Third line: character
+
+Fourth line: long integer
+
+Fifth line: double
+
+Output Format:
+
+Print each value on a separate line in the same order as input.
+
+Smaple Input :
+10
+3.14
+A
+10000000000
+2.71828
+
+Smaple Output :
+10
+3.14
+A
+10000000000
+2.71828
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      float b = sc.nextFloat();
+      char c = sc.next().charAt(0);
+      long d = sc.nextLong();
+      double e = sc.nextDouble();
+      System.out.println(a);
+      System.out.println(b);
+      System.out.println(c);
+      System.out.println(d);
+      System.out.println(e);
+  }
+}
