@@ -1,0 +1,44 @@
+Given two integers A and B, print their sum, difference,product, quotient and remainder each on a new line.
+
+Input Format:
+
+Two integers A and B ,where B ≠ 0.
+
+Output Format:
+
+Line 1: A + B
+
+Line 2: A - B
+
+Line 3: A * B
+
+Line 4: Quotient (N / M)
+
+Line 5: Remainder (N % M)
+
+Smaple Input :
+4 5
+
+Smaple Output :
+9
+-1
+20
+0
+4
+
+SOLUTON:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc =new Scanner(System.in);
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      System.out.println(a+b);
+      System.out.println(a-b);
+      System.out.println(a*b);
+      System.out.println(a/b);
+      System.out.println(a%b);
+  }
+}
