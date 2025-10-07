@@ -1,0 +1,60 @@
+Take three integers A, B, C which denote the angles of a triangle.
+
+Print "VALID" if the angles can form a triangle.
+
+Print "NOT VALID" if they cannot form a triangle.
+
+If the triangle is valid, also print its type on the second line:
+
+"EQUILATERAL" → All three angles are equal (each 60°).
+
+"ISOSCELES" → Exactly two angles are equal.
+
+"SCALENE" → All three angles are different.
+
+Constraints:
+0 <= A, B, C <= 180
+
+Input Format:
+Three integers, each on a separate line, representing the angles of a triangle.
+
+Output Format:
+
+First line: "VALID" or "NOT VALID"
+Second line: Triangle type if valid ("EQUILATERAL", "ISOSCELES", or "SCALENE"). Leave the second line empty if the triangle is not valid.
+Sample Input:
+30
+60
+90
+
+Sample Output:
+VALID
+SCALENE
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      int c = sc.nextInt();
+      int sum = a+b+c;
+      if(a<=180||b<=180||c<=180){
+      if(sum==180 && a>0 && b>0 && c>0){
+        System.out.println("VALID");
+        if(a==60 && b==60 && c==60){
+          System.out.println("EQUILATERAL");
+        }else if((a==b)||(b==c)||(a==c)){
+          System.out.println("ISOSCELES");
+        }else{
+          System.out.println("SCALENE");
+        }
+      }else{
+        System.out.println("NOT VALID");
+      }
+      }
+  }
+}
