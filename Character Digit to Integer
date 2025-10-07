@@ -1,0 +1,27 @@
+Write a program that reads a single character representing a digit ('0' to '9') and prints its integer value.
+
+Input Format:
+
+A single character representing a digit ('0' to '9').
+
+Output Format:
+
+Print the integer value of the character.
+
+Smaple Input :
+'7'
+
+Smaple Output :
+7
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      char c = sc.next().charAt(0);
+      System.out.println(c-'0');
+  }
+}
