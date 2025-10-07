@@ -1,0 +1,37 @@
+Write a program that reads a single character as input and prints whether it is a vowel or a consonant.
+
+Consider a, e, i, o, u (both lowercase and uppercase) as vowels.
+
+All other alphabets are consonants.
+
+Input Format:
+
+A single character ch (alphabet a–z or A–Z)
+
+Output Format:
+
+Print "vowel" if the character is a vowel.
+
+Print "consonant" if the character is a consonant.
+
+Sample Input:
+a
+
+Sample Output:
+vowel
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      char a = sc.next().charAt(0);
+      if(a == 'a'||a=='e'||a=='i'||a=='o'||a=='u'||a=='A'||a=='E'||a=='I'||a=='O'||a=='U'){
+        System.out.println("vowel");
+      }else{
+        System.out.println("consonant");
+      }
+  }
+}
