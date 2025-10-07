@@ -1,0 +1,52 @@
+John wants to learn how to calculate the total and average marks of a student in programming.
+Write a program that reads the student's name and marks in five subjects. Then calculate and print:
+
+Total marks (sum of all five subjects)
+Average marks (sum divided by 5, rounded to two decimal places)
+Input Format:
+
+First input: student’s name (string)
+Second input: marks in subject 1 (integer)
+Third input: marks in subject 2 (integer)
+Fourth input: marks in subject 3 (integer)
+Fifth input: marks in subject 4 (integer)
+Sixth input: marks in subject 5 (integer)
+Output Format:
+
+First line: Student Name: <name>
+Second line: Total Marks: <total>
+Third line: Average Marks: <average> (rounded to 2 decimal places)
+Smaple Input :
+Venkades
+45
+78
+62
+55
+80
+
+Smaple Output :
+Student Name: Venkades
+Total Marks: 320
+Average Marks: 64.00
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      String a = sc.nextLine();
+      int b = sc.nextInt();
+      int c = sc.nextInt();
+      int d = sc.nextInt();
+      int e = sc.nextInt();
+      int f = sc.nextInt();
+      int t  = b+c+d+e+f;
+      double avg = t/5.0;
+      System.out.println("Student Name: "+a);
+      System.out.println("Total Marks: "+t);
+      System.out.printf("Average Marks: %.2f\n",avg);
+      
+  }
+}
