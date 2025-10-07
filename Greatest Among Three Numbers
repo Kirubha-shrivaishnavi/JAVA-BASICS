@@ -1,0 +1,45 @@
+Write a program that reads an integer and print greatest among tree number using Ternary operator.
+
+Input Format:
+
+Three integers, each on a separate line.
+
+Output Format:
+
+Print the greatest integer among the three.
+
+Smaple Input 1:
+4
+89
+34
+
+Smaple Output 1:
+89
+
+Smaple Input 2:
+-5
+-10
+-3
+
+Smaple Output 2:
+-3
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      int c = sc.nextInt();
+      if((a>b)&(a>c)){
+        System.out.println(a);
+      }else if((b>a)&(b>c)){
+        System.out.println(b);
+      }else{
+        System.out.println(c);
+      }
+  }
+}
