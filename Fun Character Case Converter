@@ -1,0 +1,41 @@
+Write a program that takes a single character as input and performs the following:
+
+If the character is a lowercase letter, convert it to uppercase.
+
+If the character is an uppercase letter, convert it to lowercase.
+
+If the character is not an alphabet, print a funny Tamil-style sentence like "abcd theriyatha?"
+
+Constraints:
+Input is a single character
+
+Input Format:
+A single character
+
+Output Format:
+Converted character (upper/lower) or "abcd theriyatha?" if the input is not a letter
+
+Sample Input:
+a
+
+Sample Output:
+A
+
+SOLUTION:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc= new Scanner(System.in);
+      char a= sc.next().charAt(0);
+      if(Character.isLowerCase(a)){
+        System.out.println(Character.toUpperCase(a));
+      }else if(Character.isUpperCase(a)){
+        System.out.println(Character.toLowerCase(a));
+      }else{
+        System.out.println("abcd theriyatha?");
+      }
+     
+  }
+}
